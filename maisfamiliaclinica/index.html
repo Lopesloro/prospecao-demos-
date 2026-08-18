@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="pt-BR" class="v05">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clínica Odontológica Mais Família — Clínica odontológica em São Paulo</title>
+<meta name="description" content="A Clínica Odontológica Mais Família atende famílias em São Paulo com estrutura moderna, atendimento humano e horários que cabem na sua rotina.">
+<meta property="og:title" content="Clínica Odontológica Mais Família — Clínica odontológica em São Paulo">
+<meta property="og:description" content="A Clínica Odontológica Mais Família atende famílias em São Paulo com estrutura moderna, atendimento humano e horários que cabem na sua rotina.">
+<meta name="robots" content="noindex">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Clínica Odontológica Mais Família","description":"A Clínica Odontológica Mais Família atende famílias em São Paulo com estrutura moderna, atendimento humano e horários que cabem na sua rotina.","telephone":"+5511934489686"}</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{font-family:var(--fonte-corpo);color:var(--tinta);background:var(--fundo);line-height:1.6;-webkit-font-smoothing:antialiased}
+img,svg{max-width:100%;display:block}
+a{color:inherit}
+.container{max-width:1080px;margin-inline:auto;padding-inline:clamp(16px,4vw,32px)}
+.pular{position:absolute;left:-999px;top:0;background:var(--tinta);color:var(--fundo);padding:8px 16px;z-index:99}
+.pular:focus{left:8px}
+:focus-visible{outline:3px solid var(--acento);outline-offset:2px}
+
+/* Topo */
+.topo{position:sticky;top:0;z-index:50;background:var(--fundo-topo);backdrop-filter:blur(8px);border-bottom:1px solid var(--linha)}
+.topo .container{display:flex;align-items:center;gap:20px;min-height:64px}
+.marca{font-family:var(--fonte-titulo);font-size:1.15rem;font-weight:700;letter-spacing:var(--espaco-marca,0)}
+.nav-links{display:flex;gap:24px;margin-left:auto;font-size:.95rem}
+.nav-links a{text-decoration:none;opacity:.85}
+.nav-links a:hover{opacity:1;color:var(--acento)}
+.botao-topo{margin-left:12px}
+.menu-mobile{display:none;margin-left:auto}
+@media (max-width:719px){
+  .nav-links,.botao-topo{display:none}
+  .menu-mobile{display:block;position:relative}
+  .menu-mobile summary{list-style:none;cursor:pointer;padding:10px;border:1px solid var(--linha);border-radius:10px;font-size:.9rem}
+  .menu-mobile summary::-webkit-details-marker{display:none}
+  .menu-mobile[open] .menu-itens{position:absolute;right:0;top:calc(100% + 8px);background:var(--fundo);border:1px solid var(--linha);border-radius:12px;min-width:200px;padding:8px;box-shadow:0 12px 32px rgba(0,0,0,.18)}
+  .menu-itens a{display:block;padding:12px 16px;text-decoration:none;border-radius:8px}
+  .menu-itens a:hover{background:var(--suave)}
+}
+
+/* Botões */
+.botao{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:600;text-decoration:none;
+  padding:14px 26px;border-radius:var(--raio-botao);background:var(--acento);color:var(--sobre-acento);
+  border:2px solid var(--acento);transition:transform .15s ease,box-shadow .15s ease;font-size:1rem}
+.botao:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(0,0,0,.16)}
+.botao.fantasma{background:transparent;color:var(--tinta);border-color:var(--linha-forte)}
+.botao.fantasma:hover{border-color:var(--acento);color:var(--acento)}
+.acoes{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
+
+/* Seções */
+section{padding-block:clamp(56px,9vw,104px)}
+.rotulo-secao{font-size:.8rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--acento);margin-bottom:12px}
+h1{font-family:var(--fonte-titulo);font-size:clamp(2.1rem,5.4vw,3.6rem);line-height:1.12;font-weight:var(--peso-h1,700);letter-spacing:var(--espaco-h1,-0.01em)}
+h2{font-family:var(--fonte-titulo);font-size:clamp(1.5rem,3.4vw,2.2rem);line-height:1.2;margin-bottom:16px;font-weight:var(--peso-h2,700)}
+.intro-secao{max-width:640px;color:var(--tinta-suave);margin-bottom:40px}
+.hero p.descricao{max-width:600px;font-size:clamp(1.02rem,2vw,1.2rem);color:var(--tinta-suave);margin-top:18px}
+
+/* Serviços (estruturas por variante ficam no CSS da variante) */
+.grade-servicos{display:grid;gap:20px}
+.servico h3{font-family:var(--fonte-titulo);font-size:1.12rem;margin-bottom:6px;font-weight:var(--peso-h2,700)}
+.servico p{color:var(--tinta-suave);font-size:.97rem}
+
+/* Sobre + métricas */
+.metricas{display:flex;flex-wrap:wrap;gap:clamp(20px,5vw,56px);margin-top:36px}
+.metrica strong{display:block;font-family:var(--fonte-titulo);font-size:clamp(1.6rem,4vw,2.4rem);color:var(--acento)}
+.metrica span{font-size:.9rem;color:var(--tinta-suave)}
+
+/* Depoimentos */
+.grade-depoimentos{display:grid;gap:20px}
+@media (min-width:720px){.grade-depoimentos{grid-template-columns:1fr 1fr}}
+blockquote{background:var(--suave);border-radius:var(--raio-cartao);padding:26px}
+blockquote p{font-size:1.02rem}
+blockquote footer{margin-top:14px;font-size:.88rem;color:var(--tinta-suave)}
+.nota-ilustrativa{margin-top:18px;font-size:.8rem;color:var(--tinta-suave)}
+
+/* Contato */
+.grade-contato{display:grid;gap:28px;margin-top:8px}
+@media (min-width:820px){.grade-contato{grid-template-columns:1.2fr 1fr;align-items:start}}
+.bloco-contato{background:var(--suave);border-radius:var(--raio-cartao);padding:28px}
+.bloco-contato dt{font-size:.8rem;text-transform:uppercase;letter-spacing:.1em;color:var(--tinta-suave);margin-top:18px}
+.bloco-contato dt:first-child{margin-top:0}
+.bloco-contato dd{font-size:1.05rem;margin-top:4px}
+
+/* Rodapé */
+.rodape{border-top:1px solid var(--linha);padding-block:32px;font-size:.88rem;color:var(--tinta-suave)}
+.rodape .container{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between}
+
+/* WhatsApp flutuante */
+.zap-flutuante{position:fixed;right:18px;bottom:18px;z-index:60;width:58px;height:58px;border-radius:50%;
+  background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 28px rgba(0,0,0,.28)}
+.zap-flutuante svg{width:30px;height:30px;fill:#fff}
+.zap-flutuante:hover{transform:scale(1.06)}
+
+:root{
+  --fundo:#fcfbff;--fundo-topo:rgba(252,251,255,.9);--tinta:#241f36;--tinta-suave:#5d5678;
+  --acento:#6d3ae3;--sobre-acento:#ffffff;--suave:#f2effc;--linha:#e6e1f5;--linha-forte:#c9bfe8;
+  --raio-botao:999px;--raio-cartao:26px;
+  --fonte-titulo:'Trebuchet MS',ui-rounded,ui-sans-serif,system-ui,sans-serif;
+  --fonte-corpo:'Trebuchet MS',ui-sans-serif,system-ui,sans-serif;
+  --peso-h1:700;--peso-h2:700}
+.hero{padding-block:clamp(56px,9vw,110px)}
+.cartao-hero{background:linear-gradient(135deg,#efe9ff 0%,#e5f4ff 55%,#eafbf1 100%);border-radius:36px;
+  padding:clamp(36px,7vw,80px);position:relative;overflow:hidden}
+.bolhas{position:absolute;right:-40px;bottom:-60px;opacity:.65;pointer-events:none}
+.cartao-hero .selo{display:inline-block;background:#fff;border-radius:999px;padding:8px 18px;font-size:.85rem;
+  font-weight:700;color:var(--acento);box-shadow:0 4px 14px rgba(36,31,54,.08);margin-bottom:20px}
+.grade-servicos{grid-template-columns:1fr}
+@media (min-width:640px){.servicos .grade-servicos{grid-template-columns:repeat(2,1fr)}}
+.servicos .servico{border-radius:var(--raio-cartao);padding:28px}
+.servicos .servico:nth-child(4n+1){background:#f3edff}
+.servicos .servico:nth-child(4n+2){background:#e9f5ff}
+.servicos .servico:nth-child(4n+3){background:#eafaf0}
+.servicos .servico:nth-child(4n+4){background:#fff2ec}
+.icone-servico{width:52px;height:52px;border-radius:50%;background:#fff;display:flex;align-items:center;
+  justify-content:center;margin-bottom:18px;color:var(--acento);box-shadow:0 4px 12px rgba(36,31,54,.1)}
+.sobre .container{background:var(--suave);border-radius:36px;padding:clamp(32px,6vw,64px)}
+blockquote{box-shadow:0 6px 20px rgba(36,31,54,.06);background:#fff}
+</style>
+</head>
+<body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="topo">
+  <div class="container">
+    <div class="marca">Clínica Odontológica Mais Família</div>
+    <nav class="nav-links" aria-label="Navegação principal">
+      <a href="#servicos">Serviços</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <details class="menu-mobile">
+      <summary aria-label="Abrir menu">Menu</summary>
+      <div class="menu-itens">
+        <a href="#servicos">Serviços</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </div>
+    </details>
+    <a class="botao botao-topo" href="https://wa.me/5511934489686?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Cl%C3%ADnica%20Odontol%C3%B3gica%20Mais%20Fam%C3%ADlia%20e%20quero%20mais%20informa%C3%A7%C3%B5es.">WhatsApp</a>
+  </div>
+</header>
+<main id="conteudo">
+
+  <section class="hero" aria-label="Apresentação">
+    
+    <div class="container"><div class="cartao-hero">
+      <span class="selo">✨ Clínica odontológica em São Paulo</span>
+      <h1>Seu sorriso, cuidado de perto</h1>
+      <p class="descricao">A Clínica Odontológica Mais Família atende famílias em São Paulo com estrutura moderna, atendimento humano e horários que cabem na sua rotina.</p>
+      <div class="acoes">
+        <a class="botao zap" href="https://wa.me/5511934489686?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Cl%C3%ADnica%20Odontol%C3%B3gica%20Mais%20Fam%C3%ADlia%20e%20quero%20mais%20informa%C3%A7%C3%B5es."><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.7-1.3 1.3-1.8 1.3-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5s.8 1.9.8 2c.1.1.1.3 0 .5l-.4.6c-.1.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3 0 .2 0 .8-.1 1.4z"/></svg> Falar no WhatsApp</a>
+        <a class="botao fantasma" href="#servicos">Ver serviços</a>
+      </div><svg class="bolhas" width="280" height="240" viewBox="0 0 280 240" fill="none" aria-hidden="true"><circle cx="200" cy="80" r="70" fill="#ffffff" opacity=".55"/><circle cx="90" cy="180" r="46" fill="#ffffff" opacity=".4"/><circle cx="250" cy="200" r="30" fill="#ffffff" opacity=".5"/></svg></div></div>
+  </section>
+
+  <section id="servicos" class="servicos">
+    <div class="container">
+      <p class="rotulo-secao">O que fazemos</p>
+      <h2>Serviços pensados para você</h2>
+      <p class="intro-secao">Tudo o que a Clínica Odontológica Mais Família oferece, explicado sem rodeio — e a um toque do WhatsApp.</p>
+      <div class="grade-servicos"><article class="servico"><span class="icone-servico" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><div><h3>Avaliação completa</h3><p>Diagnóstico com radiografia digital e plano de tratamento claro, sem surpresas.</p></div></article>
+<article class="servico"><span class="icone-servico" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m12 2 2.9 6.3 6.6.7-5 4.6 1.4 6.6L12 16.9 6.1 20.2 7.5 13.6l-5-4.6 6.6-.7z"/></svg></span><div><h3>Limpeza e prevenção</h3><p>Profilaxia, aplicação de flúor e orientação para manter o sorriso saudável.</p></div></article>
+<article class="servico"><span class="icone-servico" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span><div><h3>Estética do sorriso</h3><p>Clareamento, facetas e restaurações com material de última geração.</p></div></article>
+<article class="servico"><span class="icone-servico" aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span><div><h3>Urgências</h3><p>Dor de dente não espera: encaixes no mesmo dia para casos de urgência.</p></div></article></div>
+    </div>
+  </section>
+
+  <section id="sobre" class="sobre">
+    <div class="container">
+      <p class="rotulo-secao">Quem somos</p>
+      <h2>Por que escolher a Clínica Odontológica Mais Família</h2>
+      <p class="intro-secao">A Clínica Odontológica Mais Família atende famílias em São Paulo com estrutura moderna, atendimento humano e horários que cabem na sua rotina.</p>
+      <div class="metricas">
+        
+        <div class="metrica"><strong>100%</strong><span>atendimento humano</span></div>
+        <div class="metrica"><strong>1 toque</strong><span>do orçamento pelo WhatsApp</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="depoimentos" aria-label="Depoimentos">
+    <div class="container">
+      <p class="rotulo-secao">Quem já veio</p>
+      <h2>O que dizem por aí</h2>
+      <div class="grade-depoimentos"><blockquote><p>“Atendimento atencioso do começo ao fim. Explicaram cada etapa do tratamento.”</p><footer>— Paciente da clínica</footer></blockquote>
+<blockquote><p>“Consegui horário no sábado e resolvi tudo em duas visitas.”</p><footer>— Paciente da clínica</footer></blockquote></div>
+      <p class="nota-ilustrativa">Depoimentos ilustrativos — na versão final entram avaliações reais dos seus clientes.</p>
+    </div>
+  </section>
+
+  <section id="contato" class="contato">
+    <div class="container">
+      <p class="rotulo-secao">Fale com a gente</p>
+      <h2>É só chamar</h2>
+      <div class="grade-contato">
+        <div>
+          <p class="intro-secao">Chame no WhatsApp e receba retorno rápido — ou ligue, se preferir. Sem formulário comprido, sem espera.</p>
+          <div class="acoes">
+            <a class="botao zap" href="https://wa.me/5511934489686?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Cl%C3%ADnica%20Odontol%C3%B3gica%20Mais%20Fam%C3%ADlia%20e%20quero%20mais%20informa%C3%A7%C3%B5es."><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.7-1.3 1.3-1.8 1.3-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5s.8 1.9.8 2c.1.1.1.3 0 .5l-.4.6c-.1.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3 0 .2 0 .8-.1 1.4z"/></svg> Chamar no WhatsApp</a>
+            <a class="botao fantasma" href="tel:+5511934489686">Ligar agora</a>
+          </div>
+        </div>
+        <dl class="bloco-contato">
+          <dt>Telefone / WhatsApp</dt><dd>+55 (11) 93448-9686</dd>
+          
+          <dt>Horário</dt><dd>Segunda a sábado, 9h às 19h</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="rodape">
+  <div class="container">
+    <span>© 2026 Clínica Odontológica Mais Família · São Paulo</span>
+    <span>Versão demonstrativa — preparada para apresentação</span>
+  </div>
+</footer>
+<a class="zap-flutuante" href="https://wa.me/5511934489686?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Cl%C3%ADnica%20Odontol%C3%B3gica%20Mais%20Fam%C3%ADlia%20e%20quero%20mais%20informa%C3%A7%C3%B5es." aria-label="Conversar no WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.7-1.3 1.3-1.8 1.3-.5.1-1 .2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5s.8 1.9.8 2c.1.1.1.3 0 .5l-.4.6c-.1.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3 0 .2 0 .8-.1 1.4z"/></svg></a>
+</body>
+</html>
